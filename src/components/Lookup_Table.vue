@@ -96,7 +96,7 @@
 import apiService from '../backend/api';
 
 export default {
-  name: 'Databases',
+  name: 'Lookup_Table',
   data() {
     return {
       lookups: [],

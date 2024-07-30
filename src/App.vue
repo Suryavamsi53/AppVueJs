@@ -5,13 +5,13 @@
       <!-- Remove commented router-link section if not needed -->
     </header>
     <nav>
-      <button class="show-table-button" @click="showTable('databases')">Lookup Table</button>
+      <button class="show-table-button" @click="showTable('Lookup_Table')">Lookup Table</button>
       <button class="show-table-button" @click="showTable('Account_Status')">Account Status Table</button>
       <button class="show-table-button" @click="showTable('Address_Table')">Address Table</button>
       <button class="show-table-button" @click="showTable('accountType')">Account Type Table</button>
     </nav>
     <div>
-      <Databases v-if="currentTable === 'databases'" />
+      <Lookup_Table v-if="currentTable === 'Lookup_Table'" />
       <Account_Status v-if="currentTable === 'Account_Status'" />
       <Address_Table v-if="currentTable === 'Address_Table'" />
       <AccountTypeTable v-if="currentTable === 'accountType'" />
@@ -20,15 +20,16 @@
 </template>
 
 <script>
-import Databases from './components/databases.vue';
+ 
 import Account_Status from './components/Account_Status.vue';
 import Address_Table from './components/Address_Table.vue';
+import Lookup_Table from './components/Lookup_Table.vue';
  
 
 export default {
   name: 'App',
   components: {
-    Databases,
+    Lookup_Table,
     Account_Status,
     Address_Table,
  
